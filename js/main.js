@@ -2,13 +2,34 @@
 /*Cotizador de Seguros 
    (1) Seguros para motos */
 
-    const numeroA = "ingrese el año de su moto"
-    const numeroB =  "ingrese monto minimo"
-    
+
+const  PolizaObjetos = [
+    {
+        TipoDeVehiculo: " motos ",
+        Poliza: " Basica ",
+        Año:   2024
+
+    },
+    {
+        TipoDeVehiculo: " Auto ",
+        Poliza: " Premium ",
+        Año: 2025
+
+    },
+];
+
+for(let i = 0;  i < PolizaObjetos.length; i++){
+    console.log("Estadisticas de los seguros vigentes \n =============")
+    console.log(" Tipo de vehiculo " + PolizaObjetos [i].TipoDeVehiculo);
+    console.log( "Poliza " + PolizaObjetos [i].Poliza);
+    console.log(" Año " + PolizaObjetos [i].Año);
+}
+
+
 
 function sumar() {
     
-    let numeroA = parseInt(prompt("ingrese el año de su moto"))
+    let numeroA = parseInt(prompt("ingrese el año de su moto "))
     let numeroB = parseInt(prompt("ingrese el monto minimo \n La tarifa puede variar desde $200 a $500"))
     let resultado = numeroA + numeroB
 
@@ -20,18 +41,18 @@ function sumar() {
     
     alert("En estos momentos usted debera pagar "+ resultado)
     
-  
+    
 }
 
 
 function multiplicar(){
-    let numeroA = parseInt(prompt("ingrese el año de su Auto"))
-    let numeroB = parseInt(prompt("ingrese el monto minimo \n La tarifa puede variar desde $200 a $500"))
-    let resultado = numeroA + numeroB
+    let numeroC = parseInt(prompt("ingrese el año de su Auto"))
+    let numeroD = parseInt(prompt("ingrese el monto minimo \n La tarifa puede variar desde $200 a $500"))
+    let resultado = numeroC + numeroD
 
 
     
-    if(numeroA = "ingrese el año de su auto"){
+    if(numeroC = "ingrese el año de su auto"){
         alert("Aguarde un segundo , estamos verificando la informacion")
     } else{
         alert("Vuelva intentarlo")
